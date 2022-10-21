@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
-int help(int j,int last,int siz,vector<int>&v,int x,int y,int n,int dp[1001][1001][2]) {
+int help(int j,int last,int siz,vector<int>&v,int x,int y,int n,int dp[1001][1001][2])
+{
 	if(j==v.size()&&siz<x) return INT_MAX;
 	if(j==v.size()) return 0;
 	if(siz>y) return INT_MAX;
